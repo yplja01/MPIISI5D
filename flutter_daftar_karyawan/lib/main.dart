@@ -52,11 +52,11 @@ class MyHomePage extends StatelessWidget {
                       title: Text(
                         snapshot.data![index].nama ,
                         style: const TextStyle(fontWeight: FontWeight.bold),),
-                        sumbtitle : Column(
+                        subtitle : Column(
                           crossAxisAlignment :CrossAxisAlignment.start,
                           children : [
                             Text('umur : ${snapshot.data![index].umur}'),
-                            Text('Alamat : ${snapshot}')
+                            'Alamat : ${snapshot.data![index].alamat.jalan}, ${snapshot.data![index].alamat.kota} , ${snapshot.data![index].alamat.provinsi}')
                           ],
                         )
                       
